@@ -1,0 +1,60 @@
+<section id="title">Tomato</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      Chulsoo's tomato farm has a large storage facility where tomatoes are
+      stored in a grid-shaped box, with each cell containing one tomato.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://u.acmicpc.net/de29c64f-dee7-4fe0-afa9-afd6fc4aad3a/Screen%20Shot%202021-06-22%20at%202.41.22%20PM.png"
+        style="width: 215px; height: 194px"
+      />
+    </p>
+    <p>
+      Some tomatoes are already ripe, while others are unripe. After each day,
+      unripe tomatoes adjacent to ripe tomatoes will ripen. The adjacent cells
+      are in four directions: left, right, up, and down. Tomatoes do not ripen
+      diagonally or on their own. Chulsoo wants to know the minimum number of
+      days required for all tomatoes in storage to ripen.
+    </p>
+    <p>
+      Given the box dimensions and the initial ripeness of each tomato, write a
+      program to calculate the minimum number of days needed for all tomatoes to
+      ripen. Some cells may not contain tomatoes.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line contains two integers \( M \) and \( N \), representing the
+      width and height of the box. Constraints are \( 2 \leq M, N \leq 1,000 \).
+    </p>
+    <p>
+      From the second line onward, the state of each row in the box is given,
+      with \( N \) lines in total. Each line contains \( M \) integers where 1
+      indicates a ripe tomato, 0 an unripe tomato, and -1 an empty cell.
+    </p>
+    <p>At least one tomato is present in the input.</p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      Output the minimum number of days required for all tomatoes to ripen. If
+      all tomatoes are already ripe, output 0. If it is impossible for all
+      tomatoes to ripen, output -1.
+    </p>
+  </div>
+</section>
