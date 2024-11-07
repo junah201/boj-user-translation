@@ -1,0 +1,73 @@
+<section id="title">Cheese</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      A very thin layer of cheese is placed on an N×M grid as shown in
+      <strong>Figure 1</strong>. Here, N represents the number of rows, and M
+      represents the number of columns. The cheese must be kept frozen;
+      otherwise, it melts when exposed to room temperature. Each cheese grid
+      cell (a small square) will melt if at least two of its four sides are in
+      contact with the air, and this happens exactly one hour after exposure.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/a4998beb-104c-4e37-b3d7-fd91cd81464a/-/preview/"
+        style="width: 208px; height: 171px"
+      />
+    </p>
+    <p style="text-align: center"><strong>Figure 1</strong></p>
+    <p>
+      In <strong>Figure 2</strong>, the space inside the cheese is not in
+      contact with the air, so the cheese cells within this space do not melt.
+      Only the cheese cells marked with 'C' will melt. After one hour, if air
+      reaches the inner space, cheese cells will melt as shown in
+      <strong>Figure 3</strong>.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/e5d519ee-53ea-40a6-b970-710cca0db128/-/preview/"
+        style="width: 208px; height: 171px"
+      />
+    </p>
+    <p style="text-align: center"><strong>Figure 2</strong></p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/a00b876a-86dc-4a82-a030-603a9b1593cc/-/preview/"
+        style="width: 208px; height: 171px"
+      />
+    </p>
+    <p style="text-align: center"><strong>Figure 3</strong></p>
+    <p>
+      The edges of the grid are assumed to have no cheese. Your task is to write
+      a program that calculates the exact time it takes for all the cheese to
+      melt.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line contains two integers, N and M (5 ≤ N, M ≤ 100),
+      representing the size of the grid. The following N lines describe the
+      grid, with '1' representing a cell with cheese and '0' representing a cell
+      without cheese. Each value is separated by a space.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>Output the exact number of hours it takes for all the cheese to melt.</p>
+  </div>
+</section>
