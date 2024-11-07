@@ -1,0 +1,87 @@
+<section id="title">Cheese</section>
+<section id="description">
+  <div class="headline">
+    <h2>Problem</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      A rectangular board composed of square cells is covered with a thin layer
+      of cheese (indicated by gray cells in the image below). The board’s edges
+      have no cheese, and there may be holes within the cheese.
+    </p>
+    <p>
+      When the cheese is exposed to air, any cell in contact with air melts
+      after one hour. While there’s no air inside cheese holes initially, air
+      will enter once the surrounding cheese melts. In the example below, only
+      the ‘c’-marked cheese cells melt after one hour, as shown in the
+      progression from <strong>Figure 1</strong> to <strong>Figure 2</strong>.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/9b0f0cfb-007d-4ea8-8e6f-e397728b5c8e/-/preview/"
+        style="width: 234px; height: 232px"
+      />
+    </p>
+    <p style="text-align: center">
+      <strong>Figure 1</strong> - Initial cheese layout
+    </p>
+    <p>
+      After another hour, only the remaining ‘c’-marked cells in
+      <strong>Figure 2</strong> melt, resulting in <strong>Figure 3</strong>.
+    </p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/b099f661-9788-4183-bd62-1e98e6f184e7/-/preview/"
+        style="width: 234px; height: 232px"
+      />
+    </p>
+    <p style="text-align: center"><strong>Figure 2</strong> - After one hour</p>
+    <p style="text-align: center">
+      <img
+        alt=""
+        src="https://upload.acmicpc.net/58fc0743-794b-4e27-84e8-fe491ec7bf3d/-/preview/"
+        style="width: 234px; height: 232px"
+      />
+    </p>
+    <p style="text-align: center">
+      <strong>Figure 3</strong> - After two hours
+    </p>
+    <p>
+      In this example, it takes three hours for all the cheese to melt. During
+      the melting process, the cheese may break into separate pieces.
+    </p>
+    <p>
+      Write a program to calculate the total time required for all cheese to
+      melt and, one hour before it fully melts, the number of cheese cells that
+      remain.
+    </p>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line contains two positive integers representing the height and
+      width of the board, with each up to 100. From the second line onward, each
+      row contains the board's structure from top to bottom. Cells with no
+      cheese are represented by 0, and cells with cheese are represented by 1,
+      with a space between each number.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      The first line should display the total time taken for all the cheese to
+      melt, and the second line should show the count of cheese cells remaining
+      one hour before it fully melts.
+    </p>
+  </div>
+</section>
