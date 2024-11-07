@@ -1,0 +1,74 @@
+<section id="title">Algorithm Class - DFS 1</section>
+<section id="description">
+  <div class="headline">
+    <h2>Description</h2>
+  </div>
+  <div id="problem_description" class="problem-text">
+    <p>
+      Today, Seojun is once again serving as a teaching assistant for the Depth
+      First Search (DFS) class. Let's use a problem to test if the students have
+      understood the content his father taught in class.
+    </p>
+    <p>
+      You are given an undirected graph composed of \( N \) vertices and \( M \)
+      edges. The vertices are numbered from 1 to \( N \), and the weight of
+      every edge is 1. Starting from vertex \( R \), perform a depth-first
+      search and print the visitation order of each node.
+    </p>
+    <p>
+      The pseudo-code for depth-first search is provided below. Adjacent
+      vertices are visited in <strong>ascending order</strong>.
+    </p>
+    <pre>
+
+dfs(V, E, R) {  # V: set of vertices, E: set of edges, R: starting vertex
+
+&nbsp;   visited[R] &lt;- YES;  # Mark the starting vertex R as visited.
+
+&nbsp;   for each x &isin; E(R)  # E(R): set of adjacent vertices of R (visit vertices in <strong>ascending order</strong>)
+
+        if (visited[x] = NO) then dfs(V, E, x);
+
+}</pre>
+  </div>
+</section>
+<section id="input">
+  <div class="headline">
+    <h2>Input</h2>
+  </div>
+  <div id="problem_input" class="problem-text">
+    <p>
+      The first line contains the number of vertices \( N \) (5 ≤ \( N \) ≤
+      100,000), the number of edges \( M \) (1 ≤ \( M \) ≤ 200,000), and the
+      starting vertex \( R \) (1 ≤ \( R \) ≤ \( N \)).
+    </p>
+    <p>
+      Each of the next \( M \) lines contains edge information
+      <code><em>u</em> <em>v</em></code
+      >, representing an undirected edge with weight 1 between vertices \( u \)
+      and \( v \) (1 ≤ \( u \) < \( v \) ≤ \( N \), \( u \) ≠ \( v \)). All
+      pairs of values (\( u \), \( v \)) are unique.
+    </p>
+  </div>
+</section>
+<section id="output">
+  <div class="headline">
+    <h2>Output</h2>
+  </div>
+  <div id="problem_output" class="problem-text">
+    <p>
+      Print a single integer on each of the \( N \) lines, representing the
+      visit order of each vertex. The \( i \)-th line should display the visit
+      order of vertex \( i \). The visit order of the starting vertex is 1. If a
+      vertex is unreachable from the starting vertex, output 0.
+    </p>
+  </div>
+</section>
+<section id="sample_explain_1">
+  <div id="problem_sample_explain_1" class="problem-text">
+    <p>
+      Starting from vertex 1, visit vertex 2. From vertex 2, visit vertex 3.
+      From vertex 3, visit vertex 4. Vertex 5 cannot be reached from vertex 1.
+    </p>
+  </div>
+</section>
